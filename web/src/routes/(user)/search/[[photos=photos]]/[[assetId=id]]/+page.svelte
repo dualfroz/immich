@@ -312,7 +312,7 @@
   <section id="search-content">
     {#if searchResultAssets.length > 0}
       <GalleryViewer
-        assets={searchResultAssets}
+        bind:assets={searchResultAssets}
         assetInteraction={assetMultiSelectManager}
         onEndReached={loadNextPage}
         showArchiveIcon={true}
